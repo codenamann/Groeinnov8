@@ -17,7 +17,7 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
-  const API_BASE_URL = import.meta.env.VITE_API_URI;
+  const API_BASE_URL = import.meta.env.VITE_SERVER_URI;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
