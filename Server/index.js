@@ -10,7 +10,7 @@ import helmet from 'helmet';
 
 dotenv.config();
 const app = express();
-const port = process.env.port;
+const port = process.env.PORT;
 app.use(cors({
     origin: [
         process.env.FRONTEND_OLD_URL,   // production old frontend
