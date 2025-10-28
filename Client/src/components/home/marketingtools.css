@@ -1,0 +1,62 @@
+.marketing-toolse-container{
+          margin: 3rem auto;;
+}
+
+.marketing-toolse-heading{
+          background-image: linear-gradient(to right, #615fff, #f6339a) ;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-align: center;
+          font-size: 2.4rem;
+          font-weight: 600;
+          margin: 2rem 0rem;
+}
+.marketing-toolse-grid {
+          display: flex;;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 1rem 0;
+        }
+        
+        .marketing-toolse-card {
+          flex: 0 1 130px; /* Or use flex-basis instead of width */
+          background-color: white;
+          border-radius: 1rem;
+          padding: 1rem;
+        
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          transition: transform 0.3s ease;
+          text-align: center;
+          box-shadow:
+            0 10px 15px -3px rgba(0,0,0,0.1),
+            0 4px 6px -4px rgba(0,0,0,0.1);
+        }
+        
+        .marketing-toolse-card:hover {
+          transform: scale(1.1);
+        }
+        
+        .marketing-toolse-icon {
+          width: 48px;
+          height: 48px;
+          object-fit: contain;
+          margin-bottom: 0.75rem;
+        }
+        
+        .marketing-toolse-title {
+          font-size: 1rem;
+          font-weight: 500;
+          color: #333;
+        }
+
+        @media (max-width: 768px) {
+          .marketing-toolse-heading {
+            font-size: 1.6rem;
+          }
+        
+          
+        }
+        

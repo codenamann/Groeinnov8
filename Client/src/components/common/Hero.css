@@ -1,0 +1,112 @@
+.home-hero-container {
+  width: 100%;
+  background-color: aliceblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  transition: all ease-in-out 0.5s;
+}
+.home-hero-container.animated {
+  animation: homebackgoundslider 1.5s linear infinite;
+}
+.home-hero-container.fullheight {
+  height: 100vh;
+}
+@keyframes homebackgoundslider {
+  0% {
+    background-position: 30% 30%;
+  }
+  20% {
+    background-position: 40% 40%;
+  }
+  40% {
+    background-position: 50% 50%;
+  }
+  60% {
+    background-position: 60% 60%;
+  }
+  80% {
+    background-position: 40% 40%;
+  }
+  100% {
+    background-position: 30% 30%;
+  }
+}
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.home-hero-content {
+  
+flex: 1;
+
+}
+.home-hero-image-container {
+  flex: 1;
+  
+}
+.home-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffffd8;
+  margin-bottom: 1rem;
+}
+.home-hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+}
+.home-hero-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(252, 247, 247);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all ease-in-out 0.3s;
+}
+.home-hero-button:hover {
+  font-size: 1.2rem;
+}
+.home-hero-button-icon {
+  color: white;
+  z-index: 4;
+}
+.home-hero-image {
+ max-width: 100%;
+  height: auto;;
+  object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+  .home-hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+.home-hero {
+    flex-direction: column;
+    margin-top: 3rem;
+    
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .home-hero-title {
+    font-size: 1.6rem;
+  }
+  .home-hero-subtitle{
+    font-size: 1rem;
+  }
+}

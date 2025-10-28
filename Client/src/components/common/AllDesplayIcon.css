@@ -1,0 +1,27 @@
+.arrow-icon-all-desplay {
+  background-color: #007bff;
+  color: white;
+  z-index: 1000;
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  font-size: 2.3rem;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.arrow-icon-all-desplay:hover {
+  background-color: #0056b3; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+  .arrow-icon-all-desplay {
+
+    bottom: 30px;
+    right: 30px;
+
+  }
+  
+}

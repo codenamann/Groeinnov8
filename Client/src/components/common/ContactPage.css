@@ -1,0 +1,28 @@
+.contact-content{
+          display: flex;
+          gap: 3rem;
+          margin: 1rem 0rem;
+}
+.contact-title{
+          font-size: 2.4rem;
+          text-align: center;
+          margin-top: 2rem;
+}
+@media (max-width:768px) {
+         .contact-content{
+          flex-direction: column;
+          margin-top: 2rem;
+         } 
+         .contact-title-subtitle{
+          padding: 1rem;
+         }
+       
+}
+
+@media (max-width:480px) {
+   
+          .contact-title{
+           font-size: 2rem;
+           padding: 1rem;
+          }
+ }

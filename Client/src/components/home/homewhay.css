@@ -1,0 +1,100 @@
+.whyus-container {
+          padding: 60px 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        
+        .home-why-us-title {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: var(--color-primary-600);
+          margin-bottom: 40px; 
+          text-align: center;
+          position: relative;
+        }
+        
+        .home-why-us-title::before{
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          width: 150px;
+          height: 4px;
+          background-color: var(--color-primary-600);
+        }
+     
+        
+        .home-whyus-cards-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+         
+        }
+        
+        .home-whyus-card-wrapper {
+          background: #fff;
+          border-radius: 12px;
+          
+          border: 1px solid rgb(63, 175, 240);
+          padding: 25px;
+          width: 30%;
+          transition: all 0.3s ease-in-out;
+          text-align: center;
+          margin: 0.5rem;
+          box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.263);
+        }
+        
+        .home-whyus-card-wrapper:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+        }
+        
+        .home-whyus-card--icon {
+          color: #1a73e8;
+          font-size: 2.8rem;
+          margin-bottom: 15px;
+        }
+        .home-whyus-card--icon:hover {
+          color: #1a73e8;
+          transition: all 0.3s ease-in-out;
+          animation: whyusiconmove 0.5s ease  3 ;
+        }
+        @keyframes whyusiconmove {
+          0% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(-10deg);
+          }
+          100% {
+            transform: rotate(10deg);
+          }
+          
+        }
+        .home-whyus-card-title {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 10px;
+          color: #222;
+        }
+        
+        .home-whyus-card-description { 
+          color: #555;
+          line-height: 1.6;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+          .home-whyus-cards-wrapper {
+            flex-direction: column;
+            align-items: center;
+          }
+        .home-whyus-card-wrapper{
+          width: 100%;
+          max-width: 90%;
+          margin: auto;
+        }
+          
+        }
+        

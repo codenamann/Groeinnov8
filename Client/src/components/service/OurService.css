@@ -1,0 +1,30 @@
+.our-service-page{
+          background-color: #f6f3f4;
+
+}
+
+.our-service-groei-heading{
+          text-align: center;
+          font-weight: 700;
+          font-size: 2.5rem;
+          margin: 1rem 0rem;
+          padding: 5px;
+        }
+
+        
+@media (max-width: 768px) {
+          .our-service-groei-heading{
+           padding: 1rem;
+           font-size: 1.8rem;
+          }
+        }
+
+        
+@media (max-width: 480px) {
+          .our-service-grek-section{
+                    height: 150vh;
+          }
+          .our-service-groei-heading{
+                    font-size: 1.4rem;
+                   }
+}

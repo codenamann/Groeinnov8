@@ -1,0 +1,312 @@
+/* Container and layout styles */
+.training-container {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    padding: 3rem 1rem;
+  }
+  
+  .training-wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
+  .training-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .training-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 1rem;
+  }
+  
+  .training-subtitle {
+    color: #4b5563;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  
+  /* Slider container */
+  .slider-container {
+    position: relative;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+  }
+  
+  /* Slide styles */
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Info section */
+  .slide-info {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: 9999px;
+    color: rgb(52, 92, 195);
+    margin-bottom: 1.5rem;
+  }
+  
+  .area-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .icon-blue {
+    background-color: #092758;
+  }
+  
+  .icon-purple {
+    background-color: #8b5cf6;
+  }
+  
+  .icon-green {
+    background-color: #066848;
+  }
+  
+  .area-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #031352;
+    margin-bottom: 1rem;
+  }
+  
+  .area-details {
+    margin-top: 1rem;
+  }
+  
+  .details-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  .details-text {
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  /* Image section */
+  .slide-image-container {
+    width: 100%;
+    background-color: #f9fafb;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-wrapper {
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  .area-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .nav-button-prev {
+    left: 1rem;
+  }
+  
+  .nav-button-next {
+    right: 1rem;
+  }
+  
+  .nav-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #4b5563;
+  }
+  
+  /* Dots navigation */
+  .slider-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: #d1d5db;
+    border: none;
+    padding: 0;
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  
+  .dot-active {
+    background-color: #2563eb;
+  }
+  
+  .training-slider-buttons{
+    position: relative;
+  }
+  .key-training-areas-prev{
+    position: absolute;
+  top: 450px;
+  }
+  .key-training-areas-next{
+    position: absolute;
+    top: 450px;
+    right: 88%;
+  }
+ 
+  /* Animation styles */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media screen and (min-width: 768px) {
+    .training-container {
+      padding: 3rem 1.5rem;
+    }
+    
+    .slide-content {
+      flex-direction: row;
+    }
+    
+    .slide-info {
+      width: 50%;
+    }
+    
+    .slide-image-container {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .training-title {
+      font-size: 1.875rem;
+    }
+    
+    .slider-container {
+      height: 650px;
+    }
+    
+    .area-image {
+      height: 12rem;
+    }
+    
+    .nav-button {
+      padding: 0.375rem;
+    }
+    
+    .nav-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    
+  .training-slider-buttons{
+    position: relative;
+  }
+  .key-training-areas-prev{
+    position: absolute;
+      top: 480px;
+  }
+  .key-training-areas-next{
+    position: absolute;
+    top: 450px;
+    right: 5%;
+  }
+ 
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .training-container {
+      padding: 2rem 1rem;
+    }
+    
+    .training-title {
+      font-size: 1.5rem;
+    }
+    
+    .icon-container {
+      padding: 0.5rem;
+    }
+    
+    .area-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    
+    .area-title {
+      font-size: 1.25rem;
+    }
+    
+    .details-heading {
+      font-size: 1rem;
+    }
+    
+    .slider-container {
+      height: 700px;
+    }
+    .key-training-areas-prev{
+      position: absolute;
+      top: 540px;
+
+    }
+    .key-training-areas-next{
+      position: absolute;
+      top: 540px;
+      
+    }
+  }

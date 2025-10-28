@@ -1,0 +1,150 @@
+/* Main container */
+.contact-info-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 0 auto;
+  }
+  
+  /* Content wrapper to ensure elements are above decorative circles */
+  .contact-content-wrapper {
+    width: 100%;
+  
+  }
+  
+  /* Image container */
+  .contact-image-container {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    ;
+  }
+  
+  .support-image {
+    width: 100%;
+  height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Section styling */
+  .contact-section {
+    margin-top: 2rem;
+  }
+  
+  .info-section {
+    margin-top: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+  }
+  
+  .contact-title {
+    color: #2563eb;
+  }
+  
+  .section-text {
+    color: #6b7280;
+    line-height: 1.6;
+  }
+.contact-section-title-contact-title{
+text-align: left;
+font-size: 1.5rem;
+font-weight: 700;
+color: blue;
+}
+  /* Mail link styling */
+  .mail-link {
+    display: flex;
+    align-items: center;
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .mail-link:hover {
+    color: #1d4ed8;
+  }
+  
+  .mail-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+   
+
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-info-container {
+    animation: fadeIn 0.7s ease-out 0.2s both;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .contact-info-container {
+      padding: 1.5rem;
+      max-width: 100%;
+    }
+    
+    .support-image {
+      height: auto;
+    }
+    
+    .circle-large {
+      width: 8rem;
+      height: 8rem;
+    }
+    
+    .circle-small {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-info-container {
+      padding: 1rem;
+      border-radius: 6px;
+    }
+    
+    .support-image {
+      height: 12rem;
+    }
+    
+    .section-title {
+      font-size: 1.125rem;
+    }
+    
+    .circle-large {
+      width: 6rem;
+      height: 6rem;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+    
+    .circle-small {
+      width: 4rem;
+      height: 4rem;
+      bottom: 1.5rem;
+      left: 1.5rem;
+    }
+  }

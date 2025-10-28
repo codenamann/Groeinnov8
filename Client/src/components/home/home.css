@@ -1,0 +1,27 @@
+.fist-image-order {
+          order: 1;
+        }
+        .content-second-order {
+          order: 2;
+        }
+        .who-we-are-img{
+          max-width: 90%;
+          height: 100%;
+          /* max-height: 30%; */
+        }
+        .left-pros-left-content-title{
+          font-size: 1.6rem;
+          color: black;
+        }
+        .left-pros-left-content-subtitle{
+          color: rgb(54 65 83);
+        }
+        .home-talent-contracting-training{
+          margin: 3rem 0rem;
+        }
+        @media (max-width: 768px) {
+          .content-order, .imag-order {
+            order: unset;
+          }
+        }
+        

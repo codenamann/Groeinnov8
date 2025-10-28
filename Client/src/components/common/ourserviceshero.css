@@ -1,0 +1,100 @@
+.our-serivees-container-wraper {
+          background-image: url('../../assets/divider.webp');
+          background-repeat: no-repeat;
+          background-position: center;          
+          background-size: cover;
+          background-color: red;
+          height: 100vh;
+          padding: 2rem 0rem;
+          color: white;       
+}
+.our-services-container-wraper-devider{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 2.5rem;
+        
+}
+.our-services-container-wraper-left{
+          flex: 1;
+         
+      
+}
+.our-services-hero-imge{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease;
+          margin-top: 2rem;
+}
+.our-services-container-wraper-devider-right{
+flex: 1;
+          margin-top: 3rem;
+
+
+}
+
+.our-services-container-wraper-devider-paragraph{
+          font-size: 1.2rem;
+          font-weight: 400;
+          padding: 1rem;
+          color: var(--color-gray-600);
+          text-align: center;
+          margin-bottom: 2rem;
+          background-color: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border-radius: 1rem;
+        
+}
+.our-services-hero-title{
+          font-size: 3rem;
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 1rem;
+          background-image: linear-gradient(to right, #9177f5, #feb47b);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+}
+.our-services-hero-title-subtitle{
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: var(--color-gray-600);
+          text-align: center;
+          margin-bottom: 2rem;
+       
+}
+.our-services-hero-imge{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease;
+          margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+          .our-services-container-wraper-devider{
+                    flex-direction: column;
+                    align-items: center;
+          }
+              
+          .our-services-hero-title{
+                    font-size: 2.5rem;
+          }
+}
+
+@media (max-width: 768px) {
+
+              
+          .our-services-hero-title{
+                    font-size: 2rem;
+          }
+}
+
+
+@media (max-width: 480px) {
+           
+}

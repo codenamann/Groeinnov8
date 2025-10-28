@@ -1,0 +1,72 @@
+.groei-knowledge-center-container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.groei-knowledge-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.groei-knowledge-center-content {
+  flex: 1;
+  padding: 3rem 2rem;
+}
+.groei-knowledge-center-image-container {
+  flex: 1;
+  padding: 3rem 2rem;
+}
+
+.groei-knowledge-center-title {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.groei-knowledge-center-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(54 65 83);
+  margin-bottom: 1rem;
+}
+
+.groei-knowledge-center-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .groei-knowledge-center-title {
+    font-size: 2rem;
+  }
+  .groei-knowledge-center {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .groei-knowledge-center-image-container {
+
+          padding: 2rem;
+      }
+}
+
+@media (max-width: 768px) {
+          .groei-knowledge-center-image-container {
+
+                    padding: 1rem;
+                }
+}
+
+@media (max-width: 480px) {
+  .groei-knowledge-center-title {
+    font-size: 1.6rem;
+  }
+  .groei-knowledge-center-subtitle {
+    font-size: 1rem;
+  }
+  .groei-knowledge-center {
+          gap: 2px;
+        }
+}

@@ -1,0 +1,99 @@
+
+.wraper-what-we-do-container {
+          width: 100%;
+          background-color: rgb(255, 255, 255);
+          background-size: cover;
+          background-repeat: no-repeat;
+
+        }
+
+        .wraper-what-we-do-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 3rem;
+          margin: 2rem auto;
+         
+        }
+        .wraper-what-we-do-content-left {
+          flex: 1;
+          padding: 1rem;
+        
+        }
+        .what-we-do-left-img{
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        .wraper-what-we-do-content-right {
+          flex: 1;
+          padding: 1rem;
+        }
+        .what-we-do-title {
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: var(--color-primary-600);
+          margin-bottom: 1rem;
+        }
+        .wraper-what-we-do-content-right-header{
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+        .what-we-do-list-items {
+          list-style-position: inside;
+          padding-left: 0; /* Remove default browser padding */
+                /* Optional: removes space above/below list */
+        }
+        
+        .what-we-do-list-item {
+          list-style: none;
+          font-size: 1.1rem;
+          margin: 0.3rem 0;
+          color: rgb(54 65 83);
+       
+        }
+        
+        .what-we-do-list-item::before {
+          content: '✔';
+          color: rgb(255, 105, 0);
+          margin-right: 0.5rem;
+          /* flex-shrink: 0;        Avoid shrinking icon */
+        }
+        .what-we-do-button{
+          margin-top: 2rem;
+        }
+        
+        @media (max-width: 1024px) {
+          .what-we-do-title {
+            font-size: 2rem;
+          }
+          .wraper-what-we-do-content-right-header{
+                    font-size: 1.3rem;
+                  }
+                  .what-we-do-list-item {
+                    
+                    font-size: 1rem;
+          
+                 
+                  }
+        }
+        
+        @media (max-width: 768px) {
+        .wraper-what-we-do-content {
+            flex-direction: column;
+            
+          }
+        
+        }
+        
+        
+        @media (max-width: 480px) {
+          .what-we-do-title {
+            font-size: 1.6rem;
+          }
+          .left-content-image-subtitle{
+            font-size: 1rem;
+          }
+        }
+        

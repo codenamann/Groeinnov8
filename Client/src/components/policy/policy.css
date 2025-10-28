@@ -1,0 +1,68 @@
+.policy-container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #d2e9f04f;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+        
+        .policy-container h2 {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        
+        .policy-container h3 {
+          font-size: 1.5rem;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-family: 'Times New Roman', Times, serif !important;
+          font-weight: 600;
+        }
+        
+        .policy-container p,
+        .policy-container ul {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+        .effective-date-privacy{
+          line-height: 10px;
+          font-size: 10px;
+          margin: 5px 0rem;
+
+        }
+        .policy-text{
+          display: inline-block;
+          width: 300px;
+          text-align: right;
+        }
+        .policy-container ul {
+          margin-left: 20px;
+        }
+        
+        .policy-container ul li {
+          margin-bottom: 10px;
+        }
+        
+        .policy-container strong {
+          font-weight: bold;
+        }
+
+        @media (max-width: 768px){
+            
+        .policy-container h2 {
+          font-size: 1.6rem;
+     
+        }
+        
+        .policy-container h3 {
+          font-size: 1.3rem;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-family: 'Times New Roman', Times, serif !important;
+          font-weight: 600;
+        }
+        }
+        

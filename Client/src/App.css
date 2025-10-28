@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+  --color-black: #000;
+  --color-white: #fff;
+  --color-primary-600: rgb(21 93 252);
+  --color-gray-600: #6a7282;
+  --colo-gray-700: #364152;
+  --color-background-1: #f6f3f4
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI, OpenSans, Roboto, Arial, Tahoma, Helvetica, sans-serif;
+}
+
