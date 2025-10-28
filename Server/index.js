@@ -9,8 +9,6 @@ import Setting from "./models/setting.js";
 import helmet from 'helmet';
 
 dotenv.config();
-
-app.use(helmet());
 const app = express();
 const port = process.env.port;
 app.use(cors({
@@ -21,6 +19,8 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE'],
     credentials: true,
 }));
+
+app.use(helmet());
 
 connectDB();
 
